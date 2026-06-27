@@ -4,8 +4,8 @@ import pandas as pd
 import pickle
 
 st.title("Car Price Prediction App")
-df = pd.read_csv("final_data.csv")
-model = pickle.load(open("model.pkl", "rb"))
+df = pd.read_csv("finel_data.csv")
+model = pickle.load(open("pipe.pkl", "rb"))
 
 companies = sorted(df['company'].unique())
 company = st.sidebar.selectbox("Select company", companies)
